@@ -124,14 +124,14 @@ public:
             if (crossing) {
                 if (std::abs(dp.x()) < eps) {
                     // считаем, что пересечение здесь
-                    printf("dx: %f\n", p.x() - x);
+                    //printf("dx: %f\n", p.x() - x);
                     return p.x() - x;
                 } else {
                     // откатываемся на шаг назад
                     // и уменьшаем шаг вдвое
                     p = p_orig;
                     h = h/2;
-                    printf("back: %f\n", h);
+                    //printf("back: %f\n", h);
                 }
             }
 
@@ -156,10 +156,10 @@ public:
         while(1) {
             double x3 = (x1 + x2) / 2;
             double dx3 = search_cycle_loop(x3, cycle_y, h, NULL);
-            printf("cycle x: %f\n", x3);
+            //printf("cycle x: %f\n", x3);
 
             if (std::abs(dx3) < eps) {
-                printf("final cycle x: %f\n", x3);
+                //printf("final cycle x: %f\n", x3);
 
                 final_x = x3;
                 break;
