@@ -1,5 +1,5 @@
 зависимости для сборки:
-	git libx11-dev libxrandr-dev libxinerama-dev libxi-dev libgtk-3-dev libeigen3-dev
+	libx11-dev libxrandr-dev libxinerama-dev libxi-dev libgtk-3-dev libeigen3-dev
 
 сборка:
     cmake .
